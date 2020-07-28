@@ -174,7 +174,7 @@ public class Steps {
         }
     }
 
-    @When("^User update the list items$")
+    @When("^User update list items$")
     public void updateItemsToList(DataTable table){
         List<Map<String, String>> requestHashMap=table.asMaps(String.class,String.class);
         itemsList= new ArrayList<Items>();

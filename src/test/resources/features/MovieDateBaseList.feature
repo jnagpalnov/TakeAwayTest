@@ -21,7 +21,7 @@ Feature: MovieDataBaseList
       |movie|550|
       |movie|244786|
     Then Verify response status code is 200 and verify the response body
-    And User update the list items
+    And User update list items
       |media_type |media_id|comment|
       |movie|550|Amazing Action Movie|
       |movie|244786|Wow|
@@ -31,7 +31,7 @@ Feature: MovieDataBaseList
       |movie|244786|
     Then Verify response status code is 200 and verify the response body
 
-  Scenario: Clear the created list
+  Scenario: Clear created list
     When User add items to the list
       |media_type |media_id|
       |movie|194662|
@@ -39,7 +39,6 @@ Feature: MovieDataBaseList
     Then Verify response status code is 200 and verify the response body
     And User makes a request for clearing all of the items from the list
     Then Verify the clear list request response code is 200 and then verify the response body
-
 
   Scenario: Verify error while creating and updating list without mandatory parameters
     When User makes a request for creating a list
@@ -51,32 +50,12 @@ Feature: MovieDataBaseList
       |invalid|
     Then Verify invalid create request response status code is 422 and response contains "name must be provided" error message
 
-#  Scenario: Verify error while removing list item that doesn't exists.
-#    And User remove list items
-#      |media_type |media_id|
-#      |invalid|244786|
-#    Then Verify response status code is 200 and verify the response body
-
   Scenario: Verify unauthorized error while creating and updating list without proper authorization.
     When User makes unauthorized list request
       |media_type |media_id|
       |movie|194662|
       |movie|76203|
     Then Verify unauthorized create request response status code is 401 and response contains "You must specify an Authorization header with a Bearer token to proceed." error message
-
-#
-#  Scenario: Verify error while trying to clearing or deleting a list that doesn't exists.
-#    When User add items to the list
-#      |media_type |media_id|
-#      |movie|194662|
-#      |movie|76203|
-#    Then Verify response status code is 200 and verify the response body
-#    And User make request for clearing all of the items from the list
-#    Then Verify the clear list request response
-
-
-
-
 
 
 
