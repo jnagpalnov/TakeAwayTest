@@ -37,4 +37,4 @@
  <h3> Cucumber Html output:</h3>
  <p> After running the tests, execute the maven goal <b> mvn cluecumber-report:reporting</b> and it will generate a HTML output report "index.html" under <b>"target/generated-report"</b> folder.</p>
 <img src="https://i.ibb.co/W27JgQL/Screenshot-2020-07-29-at-00-14-30.png" alt="Screenshot-2020-07-29-at-00-14-30" border="0">
-<img src="https://i.ibb.co/pZm64TS/Screenshot-2020-07-29-at-00-14-35.png" alt="Screenshot-2020-07-29-at-00-14-35" border="0">
+<img src="https://i.ibb.co/pyCnN98/Screenshot-2020-07-29-at-00-24-02.png" alt="Screenshot-2020-07-29-at-00-24-02" border="0">
