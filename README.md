@@ -10,10 +10,10 @@
    
 </ul>
 <h3>Programming Language and Automation Tools</h3>
-<ul><li>Programming Language:<b>Java(jdk 1.8)</b></li>
+<ul><li>Programming Language:Java</li>
   <li> Build Tool: Maven</li>
   <li> <b>rest-assured 3.3.0</b></li>
-  <li> Cucumber-java:6.2.2</li>
+  <li> <b>Cucumber-java:6.2.2</b></li>
   <li>Trivago cluecumber-report-plugin:1.4.2</li>
   <li> IDE: IntelliJ IDEA 2019.3</li>
 </ul>
