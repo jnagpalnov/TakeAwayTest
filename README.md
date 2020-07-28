@@ -12,7 +12,7 @@
 <h3>Programming Language and Automation Tools</h3>
 <ul><li>Programming Language:<b>Java(jdk 1.8)</b></li>
   <li> Build Tool: Maven</li>
-  <li> rest-assured 3.3.0</li>
+  <li> <b>rest-assured 3.3.0</b></li>
   <li> Cucumber-java:6.2.2</li>
   <li>Trivago cluecumber-report-plugin:1.4.2</li>
   <li> IDE: IntelliJ IDEA 2019.3</li>
@@ -20,7 +20,7 @@
 <h3>Folder Structure Overview</h3>
 <p>The major components of this projects are:</p>
    <ul>
-  <li>src/main/java/stepdefinitions/steps.java: Contains all the code for verifying the themoviedb list api</li>
+  <li>src/main/java/stepdefinitions/steps.java: Contains all the code for verifying the themoviedb <b>list</b> api</li>
   <li>src/test/resources/features/MovieDatabaseList.feature: Containing all the test scenarios</li>
   <li>src/test/java/runner/CucumberTestRunner: Junit test runner class</li>
   <li>src/test/resources/features/CentralData.Properties: Containing <b>BaseUri, version,api_key and authorization token.</b></li>
