@@ -6,7 +6,7 @@ Feature: MovieDataBaseList
       |My Cool List all tests|en|
     Then Verify list creation request was successful and verify the response body
 
-  Scenario: Update List
+  Scenario: Update the List
     When User updates the list
      |name |description|public|
      |My Cool List Updated|test description added|true|
@@ -31,7 +31,7 @@ Feature: MovieDataBaseList
       |movie|244786|
     Then Verify response status code is 200 and verify the response body
 
-  Scenario: Clear created list
+  Scenario: Clear the list
     When User add items to the list
       |media_type |media_id|
       |movie|194662|

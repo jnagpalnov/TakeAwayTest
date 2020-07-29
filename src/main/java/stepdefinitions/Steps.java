@@ -277,7 +277,7 @@ public class Steps {
 
     @After
     public void afterScenario(){
-        System.out.println("Deleting the  list after each test scenario");
+        System.out.println("Deleting the list" +this.listResponse+" after the test run");
         given()
                 .queryParam("api_key",CommonUtils.getCentralData("api_key"))
                 .header("Authorization", CommonUtils.getCentralData("authorization"))
